@@ -1,0 +1,21 @@
+.gallery {
+  --d: 10s; /* duration */
+  display: grid;
+  overflow: hidden;
+  width: 100%;
+  -webkit-mask: linear-gradient(90deg, #0000, #000 10% 90%, #0000);
+  mask: linear-gradient(90deg, #0000, #000 10% 90%, #0000);
+}
+
+.gallery > img {
+  grid-area: 1/1;
+  width: 100%;
+  aspect-ratio: 1.5;
+  object-fit: cover;
+  animation: r var(--d) linear infinite;
+}
+
+@keyframes r {
+  90% { transform: translateX(-400%); }
+  90.01% { transform: translateX(100%); }
+}

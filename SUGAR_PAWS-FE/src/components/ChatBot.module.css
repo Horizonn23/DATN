@@ -1,0 +1,219 @@
+/* Chat Bot Custom Animations */
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(254, 110, 148, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(254, 110, 148, 0.6);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.chatButton {
+  animation: glow 3s ease-in-out infinite;
+}
+
+.chatButton:hover {
+  animation:
+    heartbeat 0.6s ease-in-out,
+    glow 3s ease-in-out infinite;
+}
+
+.messageUser {
+  animation: slideInFromRight 0.4s ease-out;
+}
+
+.messageBot {
+  animation: slideInFromLeft 0.4s ease-out;
+}
+
+.quickAction {
+  animation: popIn 0.5s ease-out;
+}
+
+.quickAction:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.quickAction:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.quickAction:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.quickAction:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.wiggleOnHover:hover {
+  animation: wiggle 0.8s ease-in-out;
+}
+
+/* Custom scrollbar for chat messages */
+.chatScrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(254, 110, 148, 0.3) transparent;
+}
+
+.chatScrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chatScrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chatScrollbar::-webkit-scrollbar-thumb {
+  background: rgba(254, 110, 148, 0.3);
+  border-radius: 3px;
+}
+
+.chatScrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(254, 110, 148, 0.5);
+}
+
+/* Typing indicator animation */
+@keyframes typingDots {
+  0%,
+  60%,
+  100% {
+    transform: initial;
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+}
+
+.typingDot {
+  animation: typingDots 1.4s ease-in-out infinite;
+}
+
+.typingDot:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.typingDot:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+.typingDot:nth-child(3) {
+  animation-delay: 0s;
+}
+
+/* Icon container for smooth transitions */
+.iconContainer {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Chat link styles for markdown links */
+.chatLink {
+  color: #6366f1;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  padding: 1px 3px;
+}
+
+.chatLink:hover {
+  color: #4f46e5;
+  text-decoration: none;
+  background-color: rgba(99, 102, 241, 0.1);
+  transform: translateY(-1px);
+}
+
+.chatLink:active {
+  transform: translateY(0);
+  background-color: rgba(99, 102, 241, 0.15);
+}
+
+/* Ensure links look good in bot messages */
+.chatLinkInBot {
+  color: #7c3aed;
+}
+
+.chatLinkInBot:hover {
+  color: #6d28d9;
+  background-color: rgba(124, 58, 237, 0.1);
+}
