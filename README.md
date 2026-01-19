@@ -43,3 +43,33 @@ Tài khoản mặc định: username: alice123, password: 123456
 Bên admin thầy chỉ cần thêm endpoint '/admin'
 
 File .env của BE và FE em đưa vào folder zip để bảo mật ạ.
+
+## Screenshots
+
+### Trang chủ
+
+![Trang chủ](images/trangchu.png)
+
+### Trang sản phẩm
+
+![Trang sản phẩm](images/trangsanpham.png)
+
+### Trang đơn hàng
+
+![Trang đơn hàng](images/trangorder.png)
+
+### Quản lý sản phẩm (Admin)
+
+![Quản lý sản phẩm](images/quanlysanpham.png)
+
+### Quản lý đơn hàng (Admin)
+
+![Quản lý đơn hàng](images/quanlydonhang.png)
+
+### Thống kê (Admin)
+
+![Thống kê](images/thongke.png)
+
+### Chatbot
+
+![Chatbot](images/chatbot.png)
