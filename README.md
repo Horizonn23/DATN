@@ -1,5 +1,7 @@
+### Phát triển hệ thống thương mại điện tử SugarPaw theo mô hình tập trung Monolithic
+
 - Dự án đã có migration, seed data nên em nghĩ file .sql là không cần thiết cũng có thể run dự án bình thường ạ.
-  Hoặc thầy có thể import file .sql ở folder /database cũng được ạ.
+  Hoặc thầy có thể import file .sql cũng được ạ.
 
 - Cài đặt VS Code (màu xanh dương).
 - Giải nén file zip sẽ nhận được 2 folder code là: SUGAR_PAW_FE và SUGAR_PAW_BE.
