@@ -41,3 +41,5 @@ Luồng chạy của dự án: Client call api -> đi qua interceptor (auth) đ�
 
 Tài khoản mặc định: username: alice123, password: 123456
 Bên admin thầy chỉ cần thêm endpoint '/admin'
+
+File .env của BE và FE em đưa vào folder zip để bảo mật ạ.
